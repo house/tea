@@ -164,14 +164,14 @@ footer {
   .downloads { padding: 1em 0; }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 750px) {
   body {font-size: 18px; border-top: 2px solid #eeeeee; }
   hr {margin: 4em auto; }
-  header hgroup {margin: 0 2em; }
+  header hgroup {margin: 0 3em; }
   header h1 { font-size: 1.75em; }
   header h2 {font-size: 1.5em; }
-  #content, footer { padding: 0 2em; }
-  #content { padding-top: 2em; }
+  #content, footer { padding: 0 3em; }
+  #content { padding-top: 3em; }
   .downloads ul { padding: 0 1em; }
 }
 
@@ -186,10 +186,11 @@ footer {
 @media screen and (max-width: 480px) {
   header { padding: 1em 0; }
   header hgroup { margin: 0 1em; }
-  header div { padding: 1em 2em; }
+  header div { padding: 1.5em 2em; }
   header h2 { font-size: 1.25em; }
   hr { margin: 3em auto; }
   #content, footer { padding: 0 1.5em;}
+  #content { padding-top: 2em; }
 }
 
 
