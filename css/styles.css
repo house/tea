@@ -51,7 +51,7 @@ hr                { border: 0;
 }
 
 header { 
-  /* Background pattern by Lea Verou: http://ahou.se/18gkwgg */
+  /* Background pattern from Lea Verou, modified for browser support: http://ahou.se/18gkwgg) */
   background-color: #eee;
   background-image: 
   radial-gradient(circle at 100% 150%, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, transparent 40%, transparent),
@@ -59,6 +59,36 @@ header {
   radial-gradient(circle at 50%  100%, white 10%, #f5f5f5 11%, #f5f5f5 23%, white 24%, white 30%, #f5f5f5 31%, #f5f5f5 43%, white 44%, white 50%, #f5f5f5 51%, #f5f5f5 63%, white 64%, white 71%, transparent 71%, transparent),
   radial-gradient(circle at 100% 50%, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, transparent 50%, transparent),
   radial-gradient(circle at 0    50%, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-image:
+  -webkit-gradient(radial, 100% 150%, 0, 100% 150%, 286, color-stop(24%, #f5f5f5), color-stop(25%, white), color-stop(28%, white), color-stop(29%, #f5f5f5), color-stop(36%, #f5f5f5), color-stop(36%, white), color-stop(40%, white), color-stop(40%, transparent), color-stop(100%, transparent)),
+  -webkit-gradient(radial, 0% 150%, 0, 0% 150%, 286, color-stop(24%, #f5f5f5), color-stop(25%, white), color-stop(28%, white), color-stop(29%, #f5f5f5), color-stop(36%, #f5f5f5), color-stop(36%, white), color-stop(40%, white), color-stop(40%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0))),
+  -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 162, color-stop(10%, white), color-stop(11%, #f5f5f5), color-stop(23%, #f5f5f5), color-stop(24%, white), color-stop(30%, white), color-stop(31%, #f5f5f5), color-stop(43%, #f5f5f5), color-stop(44%, white), color-stop(50%, white), color-stop(51%, #f5f5f5), color-stop(63%, #f5f5f5), color-stop(64%, white), color-stop(71%, white), color-stop(71%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0))),
+  -webkit-gradient(radial, 100% 50%, 0, 100% 50%, 234, color-stop(5%, white), color-stop(6%, #f5f5f5), color-stop(15%, #f5f5f5), color-stop(16%, white), color-stop(20%, white), color-stop(21%, #f5f5f5), color-stop(30%, #f5f5f5), color-stop(31%, white), color-stop(35%, white), color-stop(36%, #f5f5f5), color-stop(45%, #f5f5f5), color-stop(46%, white), color-stop(49%, white), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0))),
+  -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 234, color-stop(5%, white), color-stop(6%, #f5f5f5), color-stop(15%, #f5f5f5), color-stop(16%, white), color-stop(20%, white), color-stop(21%, #f5f5f5), color-stop(30%, #f5f5f5), color-stop(31%, white), color-stop(35%, white), color-stop(36%, #f5f5f5), color-stop(45%, #f5f5f5), color-stop(46%, white), color-stop(49%, white), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: 
+  -webkit-radial-gradient(100% 150%, circle, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, transparent 40%, transparent 100%),
+  -webkit-radial-gradient(0% 150%, farthest-corner circle, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%),
+  -webkit-radial-gradient(50% 100%, farthest-corner circle, white 10%, #f5f5f5 11%, #f5f5f5 23%, white 24%, white 30%, #f5f5f5 31%, #f5f5f5 43%, white 44%, white 50%, #f5f5f5 51%, #f5f5f5 63%, white 64%, white 71%, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0) 100%),
+  -webkit-radial-gradient(100% 50%, farthest-corner circle, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%),
+  -webkit-radial-gradient(0% 50%, farthest-corner circle, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background-image: 
+  -moz-radial-gradient(100% 150%, circle, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, transparent 40%, transparent 100%),
+  -moz-radial-gradient(0% 150%, farthest-corner circle, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%),
+  -moz-radial-gradient(50% 100%, farthest-corner circle, white 10%, #f5f5f5 11%, #f5f5f5 23%, white 24%, white 30%, #f5f5f5 31%, #f5f5f5 43%, white 44%, white 50%, #f5f5f5 51%, #f5f5f5 63%, white 64%, white 71%, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0) 100%),
+  -moz-radial-gradient(100% 50%, farthest-corner circle, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%),
+  -moz-radial-gradient(0% 50%, farthest-corner circle, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background-image: 
+  -ms-radial-gradient(100% 150%, circle, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, transparent 40%, transparent 100%),
+  -ms-radial-gradient(0% 150%, farthest-corner circle, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%),
+  -ms-radial-gradient(50% 100%, farthest-corner circle, white 10%, #f5f5f5 11%, #f5f5f5 23%, white 24%, white 30%, #f5f5f5 31%, #f5f5f5 43%, white 44%, white 50%, #f5f5f5 51%, #f5f5f5 63%, white 64%, white 71%, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0) 100%),
+  -ms-radial-gradient(100% 50%, farthest-corner circle, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%),
+  -ms-radial-gradient(0% 50%, farthest-corner circle, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  background-image: 
+  -o-radial-gradient(100% 150%, circle, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, transparent 40%, transparent 100%),
+  -o-radial-gradient(0% 150%, farthest-corner circle, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%),
+  -o-radial-gradient(50% 100%, farthest-corner circle, white 10%, #f5f5f5 11%, #f5f5f5 23%, white 24%, white 30%, #f5f5f5 31%, #f5f5f5 43%, white 44%, white 50%, #f5f5f5 51%, #f5f5f5 63%, white 64%, white 71%, rgba(0, 0, 0, 0) 71%, rgba(0, 0, 0, 0) 100%),
+  -o-radial-gradient(100% 50%, farthest-corner circle, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%),
+  -o-radial-gradient(0% 50%, farthest-corner circle, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
   background-size: 100px 50px;
   margin: 0 auto;
   text-align: center;
@@ -164,14 +194,14 @@ footer {
   .downloads { padding: 1em 0; }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
   body {font-size: 18px; border-top: 2px solid #eeeeee; }
   hr {margin: 4em auto; }
-  header hgroup {margin: 0 3em; }
+  header hgroup {margin: 0 4em; }
   header h1 { font-size: 1.75em; }
   header h2 {font-size: 1.5em; }
   #content, footer { padding: 0 3em; }
-  #content { padding-top: 3em; }
+  #content { padding-top: 4em; }
   .downloads ul { padding: 0 1em; }
 }
 
