@@ -183,5 +183,11 @@ footer {
   .downloads ul li a:hover { background: #eee; border-bottom: 1px solid #ddd;}
 }
 
+@media screen and (max-width: 480px) {
+  header { padding: 1em 0; }
+  header hgroup { margin: 0 1em; }
+  header div { padding: 1em 2em; }
+  header h2 { font-size: 1.25em; }
+}
 
 
