@@ -165,14 +165,14 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
-  body {font-size: 18px;border-top: 2px solid #eeeeee;}
-  hr {margin: 4em auto;}
-  header hgroup {margin: 0 2em;}
-  header h1 { font-size: 1.75em;}
-  header h2 {font-size: 1.5em;}
-  #content, footer {padding: 0 2em;}
+  body {font-size: 18px; border-top: 2px solid #eeeeee; }
+  hr {margin: 4em auto; }
+  header hgroup {margin: 0 2em; }
+  header h1 { font-size: 1.75em; }
+  header h2 {font-size: 1.5em; }
+  #content, footer { padding: 0 2em; }
   #content { padding-top: 2em; }
-  .downloads ul { padding: 0 1em;}
+  .downloads ul { padding: 0 1em; }
 }
 
 @media screen and (max-width: 600px) {
@@ -180,7 +180,7 @@ footer {
   .downloads ul { padding: 0; }
   .downloads ul li { margin: 0 auto; width: 100%; padding: 0; }
   .downloads ul li a { padding-top: 1em; display: block; width: 100%; }
-  .downloads ul li a:hover { background: #eee; border-bottom: 1px solid #ddd;}
+  .downloads ul li a:hover { background: #eee; border-bottom: 1px solid #ddd; }
 }
 
 @media screen and (max-width: 480px) {
@@ -188,6 +188,8 @@ footer {
   header hgroup { margin: 0 1em; }
   header div { padding: 1em 2em; }
   header h2 { font-size: 1.25em; }
+  hr { margin: 3em auto; }
+  #content, footer { padding: 0 1.5em;}
 }
 
 
