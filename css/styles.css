@@ -1,0 +1,187 @@
+@import           url(http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700);
+
+/*--------------------------------
+  Typography
+--------------------------------*/
+body              { font:20px/1.5em Alegreya, 'Times New Roman', serif; margin: 0;}
+a                 { text-decoration: none; color: #222; border-bottom: 1px solid #ddd; transition: 0.15s ease-in-out; }
+a:hover           { border-bottom: 1px solid #aaa; }
+em                { font-style: italic; }
+strong            { font-weight: bold; }
+h1                { font-size: 2em; line-height: 1.33em;}
+h2                { font-size: 1.55em; line-height: 1.25em; }
+h3                { font-size: 1.15em; }
+h4                { font-size: 1em; font-style: italic; }
+h5                { font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.15em; }
+h6                { font-size: 0.67em; text-transform: uppercase; letter-spacing: 0.15em; }
+h1, h2, h3,
+h4, h5, h6        { margin-bottom: 1em; color: #222; font-weight: bold; }
+p, ul, pre, 
+table, dl         { color: #888; margin-top: 0; margin-bottom: 1em; }
+code, pre         { font-size: 16px; color: #444;}
+blockquote        { border-left: 1px solid #eeeeee; padding: 0 1.5em; margin: 0;}
+blockquote,
+blockquote > *    { color: #222; }
+table             { width: 100%; }
+th, td            { padding: 1em; text-align: center;}
+th                { border-bottom: 1px solid #ddd;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2em;
+                    font-size:0.67em;
+                    text-align: center;
+                    color: #222;
+                    }
+td                { color: #888; }
+hr                { border: 0;
+                    height: 1px; 
+                    display: block;
+                    margin: 4em auto;
+                    width: 80px;
+                    background: #999;
+                    }
+
+
+/*--------------------------------
+  Layout
+--------------------------------*/
+
+#wrapper { 
+  width: 100%;
+  margin: 0 auto;
+}
+
+header { 
+  /* Background pattern by Lea Verou: http://ahou.se/18gkwgg */
+  background-color: #eee;
+  background-image: 
+  radial-gradient(circle at 100% 150%, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #f5f5f5 24%, white 25%, white 28%, #f5f5f5 29%, #f5f5f5 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, #f5f5f5 11%, #f5f5f5 23%, white 24%, white 30%, #f5f5f5 31%, #f5f5f5 43%, white 44%, white 50%, #f5f5f5 51%, #f5f5f5 63%, white 64%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, #f5f5f5 6%, #f5f5f5 15%, white 16%, white 20%, #f5f5f5 21%, #f5f5f5 30%, white 31%, white 35%, #f5f5f5 36%, #f5f5f5 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size: 100px 50px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4.5em 0;
+  width: 100%;
+  top: 0;
+  transition: 0.15s ease-in-out;
+}
+
+header hgroup { 
+  background: #fff;
+  color: #222;
+  padding:4px;
+  border: 2px solid #aaa;
+  max-width: 700px;
+  display: block;
+  line-height: 1.35em;
+  margin: 0 auto;
+}
+
+header div { 
+  border: 2px solid #ccc;
+  padding: 2em 3em; 
+}
+
+header h1 { 
+  font-size: 2.5em;
+  line-height: 1.15em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+header h2 {
+  margin-top: 0;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #888;
+  margin-bottom: 1.75em;
+  line-height: 1.33em;
+}
+
+header hr { 
+  border: 0;
+  height: 1px; 
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  background: #999;
+}
+
+.downloads ul, #content, footer {
+  max-width: 700px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+.downloads {
+  width: 100%; 
+  background: #f5f5f5;
+  padding: 1.5em 0; 
+}
+
+.downloads ul li { 
+  display: inline-block;
+  width: 29.5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.downloads ul li:last-child { 
+  margin-right: 0; 
+}
+
+.downloads a {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #222;
+  font-size:0.67em;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
+#content h1:first-child { 
+  margin-top: 0;
+}
+
+#content {
+  padding-top: 4.5em;
+}
+
+footer {
+  margin-bottom: 4em;
+  font-style: italic;
+  text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  header { padding: 2em 0; }
+  .downloads { padding: 1em 0; }
+}
+
+@media screen and (max-width: 770px) {
+  body {font-size: 18px;border-top: 2px solid #eeeeee;}
+  hr {margin: 4em auto;}
+  header hgroup {margin: 0 2em;}
+  header h1 { font-size: 1.75em;}
+  header h2 {font-size: 1.5em;}
+  #content, footer {padding: 0 2em;}
+  #content { padding-top: 2em; }
+  .downloads ul { padding: 0 1em;}
+}
+
+@media screen and (max-width: 600px) {
+  .downloads { padding: 0; }
+  .downloads ul { padding: 0; }
+  .downloads ul li { margin: 0 auto; width: 100%; padding: 0; }
+  .downloads ul li a { padding-top: 1em; display: block; width: 100%; }
+  .downloads ul li a:hover { background: #eee; border-bottom: 1px solid #ddd;}
+}
+
+
+
