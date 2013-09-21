@@ -3,7 +3,8 @@
 /*--------------------------------
   Typography
 --------------------------------*/
-body              { font:20px/1.5em Alegreya, 'Times New Roman', serif; margin: 0;}
+
+body              { font:20px/1.5em Alegreya, 'Times New Roman', serif; margin: 0; width:320px;}
 a                 { text-decoration: none; color: #222; border-bottom: 1px solid #ddd; transition: 0.15s ease-in-out; }
 a:hover           { border-bottom: 1px solid #aaa; }
 em                { font-style: italic; }
@@ -169,7 +170,7 @@ header hr {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #222;
-  font-size:0.67em;
+  font-size: 0.67em;
   text-align: center;
   font-weight: bold;
   padding-bottom: 0.5em;
@@ -195,11 +196,11 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
-  body {font-size: 18px; border-top: 2px solid #eeeeee; }
-  hr {margin: 4em auto; }
-  header hgroup {margin: 0 4em; }
+  body { font-size: 18px; border-top: 2px solid #eeeeee; }
+  hr { margin: 4em auto; }
+  header hgroup { margin: 0 4em; }
   header h1 { font-size: 1.75em; }
-  header h2 {font-size: 1.5em; }
+  header h2 { font-size: 1.5em; }
   #content, footer { padding: 0 3em; }
   #content { padding-top: 4em; }
   .downloads ul { padding: 0 1em; }
